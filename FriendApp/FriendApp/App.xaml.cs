@@ -9,7 +9,7 @@ namespace FriendApp
 	{
         private static FriendDataBase database;    
 
-        public static FriendDataBase DataBase
+        public static FriendDataBase DataBase  
         {
             get
             {
