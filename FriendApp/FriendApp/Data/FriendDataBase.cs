@@ -16,6 +16,9 @@ namespace FriendApp.Data
             database.CreateTableAsync<Friend>().Wait(); 
       
         }
+
+       
+
         public  Task<List<Friend>> GetFriendsAsync()
         {
 
