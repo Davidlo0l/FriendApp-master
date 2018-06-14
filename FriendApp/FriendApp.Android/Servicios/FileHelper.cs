@@ -1,12 +1,14 @@
-﻿using FriendApp.Services;
+﻿
+using FriendApp.Droid.Servicios;
 using Xamarin.Forms;
+using FriendApp.Services;
+using System;
+using System.IO;
 
 [assembly: Dependency(typeof(FileHelper))]
 namespace FriendApp.Droid.Servicios
 {
-    using FriendApp.Services;
-    using System;
-    using System.IO;
+    
 
     public class FileHelper : IFileHelper
     {
