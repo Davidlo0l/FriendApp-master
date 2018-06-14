@@ -9,13 +9,13 @@ namespace FriendApp
 	{
         private static FriendDataBase database;    
 
-        public static FriendDataBase DataBase  
+        public static FriendDataBase DataBase
         {
             get
             {
                 if (database == null)
                 {
-                    database = new FriendDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("friendsbd.bd3"));
+                    database = new FriendDataBase(DependencyService.Get<IFileHelper>().GetLocalFilePath("friendsbd.db3"));
                    
                 }
                 return database;

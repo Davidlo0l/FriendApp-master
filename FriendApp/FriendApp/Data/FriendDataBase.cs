@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FriendApp.Data
 {
-    class FriendDataBase
+     public class FriendDataBase
     {
         private readonly SQLiteAsyncConnection database;
         public FriendDataBase(string dbPath)

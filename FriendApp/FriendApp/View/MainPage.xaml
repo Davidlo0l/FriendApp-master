@@ -4,8 +4,9 @@
              xmlns:local="clr-namespace:FriendApp"
              x:Class="FriendApp.View.MainPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+">
-            
+        <ToolbarItem Text="+"
+                     Command="{Binding AddFriendCommand}">
+                
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 

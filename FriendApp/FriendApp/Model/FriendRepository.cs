@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace FriendApp.Model
 {
@@ -28,8 +29,8 @@ namespace FriendApp.Model
             {
                 sorted =
                 from f in Friends
-                orderby f.FirstName
-                group f by f.FirstName[0].ToString()
+                orderby f.Nombre
+                group f by f.Nombre[0].ToString()
                 into theGroup
                 select
                 new Grouping<string, Friend>

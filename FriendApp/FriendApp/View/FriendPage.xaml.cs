@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FriendApp.Model;
+using FriendApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,17 @@ namespace FriendApp.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class FriendPage : ContentPage
 	{
-		public FriendPage ()
+		public FriendPage ( Friend friend = null)
 		{
 			InitializeComponent ();
+            if (friend == null)
+            {
+                this.BindingContext = new FriendViewModel(Navigation);
+            }
+            else
+            {
+                this.BindingContext = new FriendViewModel(Navigation, friend);
+            }
 		}
 	}
 }
